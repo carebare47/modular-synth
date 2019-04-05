@@ -1,0 +1,14 @@
+order parts (check for free shipping (rs, farnell etc...))
+
+projects to order for:
+vco
+vca
+leos awesome thing
+adsr
+vcf?
+
+theremin? 
+amplifier?
+
+
+https://uk.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/ceramic-disc-plate-capacitors?lead-spacing=5mm&packaging=each

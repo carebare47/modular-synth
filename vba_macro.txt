@@ -1,0 +1,104 @@
+
+
+Private Sub CommandButton1_Click()
+
+Dim r As Long
+Dim c As Long
+Dim lDescription As Long
+Dim lValue As Long
+Dim lType As Long
+Dim lQuantity As Long
+Dim dValue As Double
+Dim myCell As Range
+Dim rowCounter As Long
+
+
+c = 3 ' GetTargetColumn() Or you could just set this manually, like: c = 1
+lDescription = 16
+rowCounter = 2
+
+Dim MyString As String
+Dim capType As String
+
+
+With Sheet1 ' <-- You should always qualify a range with a sheet!
+
+    For r = 2 To 110
+
+        ' Here we're looping over all the cells in rows 1 to 10, in Column "c"
+        'cellValue = Range(r, 3).Value
+        If .Cells(r, c).Value = "R" Then
+            'MyString = .Cells(r, 5).Value
+            .Cells(rowCounter, 13).Value = intWordCount(.Cells(r, 4))
+            .Cells(rowCounter, 14).Value = .Cells(r, 5).Value
+            .Cells(rowCounter, 15) = "Through Hole Resistor, " & .Cells(r, 5).Value & "ohm, MCRE Series, 125 mW, ± 5%, Axial Leaded, 200 V"
+            rowCounter = rowCounter + 1
+        ElseIf .Cells(r, c).Value = "C" Then
+            MyString = .Cells(r, 5).Value
+            If InStr(MyString, "uF") > 0 Then
+                MyString = Left(MyString, Len(MyString) - 2)
+                If IsNumeric(MyString) Then
+                    dValue = CDbl(MyString)
+                    ' If bigger than 1uF...
+                    If dValue > 1 Then
+                        capType = "Electrolytic"
+                    Else
+                        capType = "non-electrolytic"
+                    End If
+'strTemp is a numeric value
+                Else
+                    Dim errorString As String
+                    errorString = "Error. R: " & r & ". C: " & c
+                    MsgBox errorString
+                    'Exit Sub
+'strTemp is not a numeric value
+                End If
+            End If
+            
+            If capType = "non-electrolytic" Then
+                .Cells(rowCounter, 15).Value = "Ceramic Disc Capacitor, " & .Cells(r, 5).Value & ", 5 mm"
+            ElseIf capType = "Electrolytic" Then
+                .Cells(rowCounter, 15).Value = "Electrolytic Capacitor, " & .Cells(r, 5).Value & ", Radial Leaded, 5 mm"
+            End If
+            .Cells(rowCounter, 13).Value = intWordCount(.Cells(r, 4))
+            .Cells(rowCounter, 14).Value = .Cells(r, 5).Value
+            .Cells(rowCounter, 12).Value = capType
+            rowCounter = rowCounter + 1
+        End If
+        
+
+'You can place text into a cell on your spreadsheet:
+'
+'Dim MyString As String
+'
+'MyString = "Some text"
+'
+'ActiveCell.Value = MyString
+'
+'And you can get text out of cell on your spreadsheet:
+'
+'Dim MyString As String
+'
+'MyString = ActiveCell.Value
+
+            
+            '.Cells(r, 16) = "Through Hole Resistor, " & .Cells(r, 5).Value & "ohm, MCRE Series, 125 mW, ± 5%, Axial Leaded, 200 V"
+        'End If
+        '.Cells(r, c).Value = Sheet2.Cells(r, c).Value
+'=IF(N47="R",("Through Hole Resistor, "&(M47)&"ohm, MCRE Series, 125 mW, ± 5%, Axial Leaded, 200 V"),"Fail")
+
+        '---- or ----
+
+        '...to easily copy from one place to another (even with an offset of rows and columns)
+        ' .Cells(r, c).Value = Sheet2.Cells(r + 3, 17).Value
+
+
+    Next r
+MsgBox "Success!"
+End With
+End Sub
+
+
+Function intWordCount(rng As Range) As Integer
+    intWordCount = UBound(Split(Application.WorksheetFunction.Trim(rng.Value), " "), 1) + 1
+End Function

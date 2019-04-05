@@ -1,0 +1,119 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C32,0.001uF,,1,~
+2,Capacitor symbol for simulation only,CAP,C41 C46,0.001uF,,2,~
+3,Unpolarized capacitor,C,C9 C10 C11 C12 C13 C14 C15 C17 C18,0.01uF,,9,~
+4,Unpolarized capacitor,C,C26 C30 C31 C36 C37 C39,0.1uF,,6,~
+5,Unpolarized capacitor,C,C2,0.22uF,,1,~
+6,Capacitor symbol for simulation only,CAP,C40,0.22uF,,1,~
+7,Unpolarized capacitor,C,C42 C43 C44,0.22uF,C_Disc_D5.0mm_W2.5mm_P5.00mm,3,~
+8,"Polarized capacitor, US symbol",CP1,C1 C3,100uF,,2,~
+9,Unpolarized capacitor,C,C22,10pF,,1,~
+10,Unpolarized capacitor,C,C45,10pF,C_Disc_D5.0mm_W2.5mm_P5.00mm,1,~
+11,Unpolarized capacitor,C,C8,10pF,sip5,1,~
+12,"Polarized capacitor, US symbol",CP1,C4 C5 C6 C7 C21 C24 C27 C33 C34,10uF,,9,~
+13,Capacitor symbol for simulation only,C,C49 C50,10uF,CP_Radial_D6.3mm_P2.50mm,2,~
+14,Unpolarized capacitor,C,C51,2.2uF NP,CP_Radial_D8.0mm_P3.50mm,1,~
+15,Unpolarized capacitor,C,C29 C35,22pF,,2,~
+16,Unpolarized capacitor,C,C48,22pF,C_Disc_D5.0mm_W2.5mm_P5.00mm,1,~
+17,"Polarized capacitor, US symbol",CP1,C16,22uF,,1,~
+18,Unpolarized capacitor,C,C19 C28,330pF,,2,~
+19,Unpolarized capacitor,C,C38,4.7n,,1,~
+20,"Polarized capacitor, US symbol",CP1,C20,4.7uF,,1,~
+21,Capacitor symbol for simulation only,CAP,C47,47pF,,1,~
+22,"Polarized capacitor, US symbol",CP1,C23 C25,47uF,,2,~
+23,"100V 0.15A standard switching diode, DO-35",1N4148,D1,1N4148,D_DO-35_SOD27_P7.62mm_Horizontal,1,http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf
+24,"100V 0.3A Small Signal Fast Switching Diode, DO-35",1N914,D2 D3,1N914,D_DO-35_SOD27_P7.62mm_Horizontal,2,http://www.vishay.com/docs/85622/1n914.pdf
+25,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J5,1V/OCT,,1,~
+26,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J9 J11 J12 J21,AudioJack2,,4,~
+27,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J13 J14 J15 J16 J17,AudioJack2,PinHeader_1x02_P2.54mm_Vertical_audio,5,~
+28,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J7,BandPass,,1,~
+29,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02_Male,J1,Conn_01x02_Male,,1,~
+30,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J20,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,1,~
+31,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J10,Conn_01x03_Male,,1,~
+32,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J6,Enveelope,,1,~
+33,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J4,HighPass,,1,~
+34,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J2,Input,,1,~
+35,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J23,LINE OUT,PinHeader_1x02_P2.54mm_Vertical_audio,1,~
+36,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J8,LowPass,,1,~
+37,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J22,MAX OUT,PinHeader_1x02_P2.54mm_Vertical_audio,1,~
+38,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J24,PULSE OUTPUT,,1,~
+39,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J18,PWM,,1,~
+40,"Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x03,J3,Screw_Terminal_01x03,,1,~
+41,"Audio Jack, 2 Poles (Mono / TS)",AudioJack2,J19,TRIANGLE OUT,,1,~
+42,"0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92",2N3904,Q1 Q5 Q6 Q8 Q9,2N3904,TO-92_Inline,5,https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf
+43,"-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",2N3906,Q3 Q4,2N3906,TO-92_Inline,2,https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf
+44,"-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",2N3906,Q7,2N3906,TO-92_Wide,1,https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf
+45,,2SA798,Q2,2SA798,transistor-SIP-5,1,
+46,Resistor,R,R61,1.5M,,1,~
+47,Resistor,R,R117,1.8K,,1,~
+48,Resistor,R,R1 R53,100,,2,~
+49,Potentiometer,R_POT,R18_PAD1 R19_PAD1 R20_PAD1 R21_ATTEN1 R22_INITIAL1,100K,PinHeader_1x03_P2.54mm_Vertical,5,~
+50,Resistor,R,R3 R4 R7 R9 R15 R22 R30 R33 R38 R40 R46 R57 R63 R64 R65 R74 R93 R106,100k,,18,~
+51,Potentiometer,R_POT,R2 R11 R23 R25 R26 R27 R31 R58 R59 R60 R73 R83 R84 R85 RV1,100k,,15,~
+52,Potentiometer,R_POT,R17_OFFSET_TRIM1,100k,Potentiometer_Piher_PT-6-V_Vertical,1,~
+53,Resistor,R,R76 R77 R78 R79 R80 R81 R90 R92,100k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,8,~
+54,Potentiometer,R_POT,R44 R71,100r,,2,~
+55,Potentiometer,R_POT,R4_LEVEL1,10K,PinHeader_1x03_P2.54mm_Vertical,1,~
+56,Resistor,R,R35 R43 R49 R51 R55 R75 R96 R98 R104,10k,,9,~
+57,Resistor,R,R12 R29,11k,,2,~
+58,Resistor,R,R86 R89,11k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,2,~
+59,Resistor,R,R108 R112,12k,,2,~
+60,Resistor,R,R105,150k,,1,~
+61,Resistor,R,R113,15k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+62,Resistor,R,R19 R42,15k,,2,~
+63,Resistor,R,R102 R103,18k,,2,~
+64,Resistor,R,R34 R41 R50 R56 R62,1M,,5,~
+65,Resistor,R,R10 R24 R47 R91 R116,1k,,5,~
+66,Resistor,R,R115,1k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+67,Resistor,R,R67 R111,2.2M,,2,~
+68,Resistor,R,R88 R107,2.2k,,2,~
+69,Resistor,R,R97,20K,,1,~
+70,Resistor,R,R13 R16,220k,,2,~
+71,Resistor,R,R69,22K,,1,~
+72,Resistor,R,R14 R17 R32 R37,22r,,4,~
+73,Resistor,R,R95,22r,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+74,Resistor,R,R36,270,,1,~
+75,Resistor,R,R8 R87,27k,,2,~
+76,Resistor,R,R11_plus_3500ppm_per_deg_C1 R68,2k,,2,~
+77,Resistor,R,R66,3.3M,,1,~
+78,Resistor,R,R82,330k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+79,Resistor,R,R94,330k,,1,~
+80,Resistor,R,R39,33k,,1,~
+81,Resistor,R,R45 R100,390,,2,~
+82,Resistor,R,R114,3K,,1,~
+83,Resistor,R,R48 R54,470k,,2,~
+84,Resistor,R,R5 R6 R20 R21,47k,,4,~
+85,Resistor,R,R28 R70,47r,,2,~
+86,Resistor,R,R18,4k7,,1,~
+87,Resistor,R,R52,5.6k,,1,~
+88,Potentiometer,R_POT,R101,50k,,1,~
+89,Resistor,R,R109,51k,,1,~
+90,Resistor,R,R110,51k,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+91,Resistor,R,R72,820,,1,~
+92,Resistor,R,R99,R,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,~
+93,Potentiometer,R_POT,RV2,500k,,1,~
+94,Potentiometer,R_POT,RV3,R_POT,,1,~
+95,"1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",SW_DIP_x01,SW2 SW3 SW4,SW_DIP_x01,PinHeader_1x02_P2.54mm_Vertical,3,
+96,Single Pole Single Throw (SPST) switch,SW_SPST,SW1,SW_SPST,,1,
+97,"2MHz, Operational Transconductance Amplifier (OTA), gM spread 2:1, DIP-8/SOIC-8",CA3080,U4 U6 U13,CA3080,,3,http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf
+98,"2MHz, Operational Transconductance Amplifier (OTA), gM spread 2:1, DIP-8/SOIC-8",CA3080,U17,CA3080,DIP-8_W7.62mm_Socket_LongPads,1,http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf
+99,"Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220",LM7805_TO220,U1,LM7805_TO220,TO-220-3_Vertical,1,http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+100,Echo Processor IC,PT2399,U8 U11,PT2399,,2,http://sound.westhost.com/pt2399.pdf
+101,"Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL071,U10,TL071,,1,http://www.ti.com/lit/ds/symlink/tl071.pdf
+102,"Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL071,U16,TL071,DIP-8_W7.62mm_Socket_LongPads,1,http://www.ti.com/lit/ds/symlink/tl071.pdf
+103,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL072,U3 U12,TL072,,2,http://www.ti.com/lit/ds/symlink/tl071.pdf
+104,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL072,U14 U15 U18,TL072,DIP-8_W7.62mm_Socket_LongPads,3,http://www.ti.com/lit/ds/symlink/tl071.pdf
+105,"Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14",TL074,U2 U5 U7 U9,TL074,,4,http://www.ti.com/lit/ds/symlink/tl071.pdf
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
