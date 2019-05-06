@@ -1,0 +1,38 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'tube_screamer_v2_metric_pads.pdsprj'.
+CADCAM generated at 12:52:58 on 02 March 2019.
+
+File List
+---------
+Bottom Copper           : tube_screamer_v2_metric_pads_grb - CADCAM Bottom Copper.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer
+
+D10	CIRCLE  D=0.76mm                                                          DRAW
+D11	CIRCLE  D=0.6mm                                                           DRAW
+D12	CIRCLE  D=0.25mm                                                          DRAW
+D13	CIRCLE  D=0.0635mm                                                        DRAW
+D14	CIRCLE  D=1.8mm                                                           FLASH
+D15	CIRCLE  D=2.03mm                                                          FLASH
+D16	CIRCLE  D=1.78mm                                                          FLASH
+D17	CIRCLE  D=1.52mm                                                          FLASH
+D18	SQUARE  S=1.27mm                                                          FLASH
+D19	CIRCLE  D=1.4mm                                                           FLASH
+D70	CIRCLE  D=2.29mm                                                          FLASH
+D71	SQUARE  S=2.03mm                                                          FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+
+
+[END OF FILE]

@@ -1,0 +1,29 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'tube_screamer_v2_metric_pads.pdsprj'.
+CADCAM generated at 12:52:22 on 02 March 2019.
+
+File List
+---------
+Drill                   : tube_screamer_v2_metric_pads - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer
+
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	0.8mm (0-15) Plated
+T02	1.02mm (0-15) Plated
+T03	3.1mm (0-15) Plated
+
+
+[END OF FILE]
